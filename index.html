@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PPLG Profile ♡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- Tombol Dark Mode -->
+    <div style="text-align: right;">
+        <button id="btn-tema" class="button">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Identitas -->
+    <section class="profile-card">
+        <img src="fotoafika.jpeg" alt="Foto Afika" class="avatar">
+
+        <h1>My PPLG Profile ♡</h1>
+
+        <!-- Sapaan otomatis berdasarkan jam (diisi JavaScript) -->
+        <p id="salam-waktu" class="quote">Halo! Selamat datang ♡</p>
+        <p>🕒 <span id="jam">--:--:--</span></p>
+
+        <h2>Hai, aku <span id="nama-afika">Afika</span>! 🎀</h2>
+
+        <p>
+            Halo! Aku Afika, seorang pelajar yang sedang belajar
+            dunia PPLG dan tertarik dengan teknologi serta desain website.
+        </p>
+
+        <p class="quote" id="quote">
+            "Belajar sedikit demi sedikit, lama-lama jadi jago! ♡"
+        </p>
+        <button id="btn-quote" class="button">✨ Ganti Quote</button>
+
+        <br><br>
+
+        <!-- Interaktif: kenalan dengan pengunjung -->
+        <div class="sapa-box">
+            <label for="input-nama">Siapa namamu? 🎀</label><br>
+            <input type="text" id="input-nama" placeholder="Tulis namamu di sini...">
+            <button id="btn-sapa" class="button">💬 Sapa Aku!</button>
+            <p id="hasil-sapa"></p>
+        </div>
+
+        <a href="#kontak" class="button">💌 Kenalan Yuk!</a>
+        <p id="pesan-kenalan"></p>
+    </section>
+
+    <!-- Hobi -->
+    <section class="info-card">
+        <h2>🎀 Hobi & Minat</h2>
+
+        <p>
+            Saat sedang tidak belajar, aku suka melakukan hal-hal
+            yang menyenangkan dan kreatif.
+        </p>
+
+        <ul id="daftar-hobi">
+            <li>🎨 Menggambar</li>
+            <li>🎧 Mendengarkan musik</li>
+            <li>💻 Membuat desain website</li>
+            <li>🥘 cooking</li>
+            <li>🍰 Mencoba hal-hal baru</li>
+        </ul>
+
+        <button id="btn-hobi" class="button">➕ Tambah Hobi: 🎮 Main Game</button>
+    </section>
+
+    <!-- Target Belajar -->
+    <section class="info-card">
+        <h2>💻 Target Belajar PPLG</h2>
+
+        <p>
+            Aku ingin terus mengembangkan kemampuan di bidang
+            Pemrograman dan Pengembangan Perangkat Lunak dan Gim.
+            <br><small>💡 Klik target kalau sudah tercapai ya!</small>
+        </p>
+
+        <div class="target-list">
+            <div class="target">
+                <span>♡</span>
+                <p>Menguasai HTML</p>
+            </div>
+
+            <div class="target">
+                <span>♡</span>
+                <p>Menguasai CSS</p>
+            </div>
+
+            <div class="target">
+                <span>♡</span>
+                <p>Belajar JavaScript</p>
+            </div>
+
+            <div class="target">
+                <span>♡</span>
+                <p>Membuat website sendiri</p>
+            </div>
+        </div>
+        <p id="progress-belajar"></p>
+    </section>
+
+    <!-- Kontak -->
+    <section class="contact" id="kontak">
+        <h2>💌 Hubungi Saya</h2>
+
+        <p>
+            Mau berteman atau ngobrol tentang coding?
+            Yuk, kenalan!
+        </p>
+
+        <button id="btn-halo" class="button">👋 Sapa Afika!</button>
+        <br>
+        <a href="mailto:afika@example.com" class="button">
+            💗 Hubungi Saya
+        </a>
+    </section>
+
+    <footer>
+        <p>Made with ♡ by Afika | PPLG | <span id="tahun"></span></p>
+        <p>Total kunjungan klik tombol: <span id="jumlah-klik">0</span> ♡</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
